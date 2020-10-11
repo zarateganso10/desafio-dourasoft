@@ -69,8 +69,8 @@ class OrdersController extends AppController
             $order = $this->Orders->patchEntity($order, $this->request->getData());
             if ($this->Orders->save($order)) {
                 return $this->response
-                ->withType('application/json')
-                ->withStatus(201);
+                    ->withType('application/json')
+                    ->withStatus(201);
             }
             return $this->response
                     ->withType('application/json')
