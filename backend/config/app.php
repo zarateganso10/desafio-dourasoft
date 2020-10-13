@@ -372,6 +372,11 @@ return [
         ],
     ],
 
+    'Cors' => [
+        // Accept all origins
+        'AllowOrigin' => true,
+    ],
+
     /*
      * Session configuration.
      *

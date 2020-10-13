@@ -64,11 +64,13 @@ class ClientsController extends AppController
             if ($this->Clients->save($client)) {
                 return $this->response
                     ->withType('application/json')
-                    ->withStatus(201);
+                    ->withStatus(201)
+                    ->withStringBody(json_encode($client));
             }
             return $this->response
                     ->withType('application/json')
-                    ->withStatus(400);
+                    ->withStatus(400)
+                    ->withStringBody(json_encode($client));
         }
     }
 

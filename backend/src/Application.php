@@ -117,6 +117,8 @@ class Application extends BaseApplication
 
         $this->addPlugin('Migrations');
 
+        $this->addPlugin('Cors');
+
         // Load more plugins here
     }
 }
